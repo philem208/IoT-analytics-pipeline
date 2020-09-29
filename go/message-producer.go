@@ -9,14 +9,14 @@ import (
 )
 
 var (
-	kafkaBrokers = []string{"0.0.0.0:9094"}
+	kafkaBrokers = []string{"kafka:9092"}
 	KafkaTopic = "NiFi"
 	enqueued int
 )
 
 func main() {
 
-	producer, err := setupProducer()
+        producer, err := setupProducer()
 	if err != nil {
 		panic(err)
 	} else {
