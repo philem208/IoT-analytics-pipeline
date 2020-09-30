@@ -6,16 +6,14 @@ services:
     ports:
       - "2181"
     networks:
-      - "information-network"
+      - "information_network"
   kafka:
     image: wurstmeister/kafka
     command: [start-kafka.sh]
     ports:
       - "9094:9092"
-    #expose: 
-    #  - "29092"
     environment:
-      KAFKA_CREATE_TOPICS: "NiFi:1:1" # topic:partition:replicas
+      KAFKA_CREATE_TOPICS: "LENZDRGB610:1:1" # topic:partition:replicas
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
       KAFKA_ADVERTISED_PORT: 9092
       KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: INSIDE:PLAINTEXT,OUTSIDE:PLAINTEXT
@@ -23,13 +21,15 @@ services:
       KAFKA_ADVERTISED_LISTENERS: INSIDE://:9092,OUTSIDE://localhost:9094
       KAFKA_INTER_BROKER_LISTENER_NAME: INSIDE
     networks:
-      - "information-network"
+      - "information_network"
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
+      - /sissec/volumes/information-network/kafka:/kafka/
     depends_on:
       - "zookeeper"
     links:
       - "zookeeper"
+
 #  nifi:
 #    image: apache/nifi:latest
 #    ports:
@@ -41,15 +41,9 @@ services:
 #      - NIFI_ZK_CONNECT_STRING=zookeeper:2181
 #      - NIFI_ELECTION_MAX_WAIT=1 min
 
-  producer:
-    build: 
-      context: ./go
-      dockerfile: Dockerfile
-    restart: on-failure   
-    networks:
-      - "information-network"
-
+ 
 networks:
-  information-network:
-  operation-network:
-  service-network:
+  information_network:
+  operation_network:
+  service_network:
+

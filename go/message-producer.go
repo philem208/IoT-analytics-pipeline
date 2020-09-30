@@ -10,7 +10,7 @@ import (
 
 var (
 	kafkaBrokers = []string{"kafka:9092"}
-	KafkaTopic = "NiFi"
+	KafkaTopic = "LENZDRGB610"
 	enqueued int
 )
 
@@ -42,7 +42,7 @@ func setupProducer() (sarama.AsyncProducer, error){
 // by the user in terminal
 func produceMessages(producer sarama.AsyncProducer, signals chan os.Signal) {
 	for {
-		time.Sleep(time.Second)
+		time.Sleep(3 * time.Second)
 		message := &sarama.ProducerMessage{Topic: KafkaTopic, Value: sarama.StringEncoder("testing")}
 		select {
 		case producer.Input() <- message:
