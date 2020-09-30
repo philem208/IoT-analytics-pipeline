@@ -33,4 +33,4 @@ jobs:
         run: docker build ./go -t kafka_producer --network="sissec_information-network" 
         
       - name: run kafka producer
-        run: docker run -it --network=sissec_information-network kafka_producer
+        run: docker run -i --network=sissec_information-network kafka_producer
