@@ -27,7 +27,7 @@ jobs:
         run: docker-compose up --d
         
       - name: build kafka producer
-        run: docker build ./go -t kafka_producer --network="sissec_information-network" 
+        run: docker build ./go -t kafka_producer --network="information-network" 
         
       - name: run kafka producer
-        run: docker run -it --network=sissec_information-network kafka_producer
+        run: docker run -it --network=information-network kafka_producer
