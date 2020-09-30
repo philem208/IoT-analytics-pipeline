@@ -23,5 +23,11 @@ jobs:
       - uses: actions/checkout@v2
 
       # Runs a single command using the runners shell
-      - name: docker-compose build
+      - name: start sissec-environment
         run: docker-compose up
+        
+      - name: build kafka producer
+        run: docker build . -t kafka_producer --network="sissec_information-network" 
+        
+      - name: run kafka producer
+        run: docker run -it --network=sissec_information-network kafka_producer
