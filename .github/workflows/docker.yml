@@ -25,9 +25,12 @@ jobs:
       # Runs a single command using the runners shell
       - name: start sissec-environment
         run: docker-compose up --d
+      
+      - name: create sissec network:
+        run: docker network create sissec_information-network
         
       - name: build kafka producer
-        run: docker build ./go -t kafka_producer --network="information-network" 
+        run: docker build ./go -t kafka_producer --network="sissec_information-network" 
         
       - name: run kafka producer
-        run: docker run -it --network=information-network kafka_producer
+        run: docker run -it --network=sissec_information-network kafka_producer
