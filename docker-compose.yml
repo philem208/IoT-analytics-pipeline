@@ -5,14 +5,11 @@ services:
     image: wurstmeister/zookeeper
     ports:
       - "2181"
-    hostname: zookeeper
-    container_name: zookeeper0
- 
+    networks:
+      - "information-network"
   kafka:
     image: wurstmeister/kafka
     command: [start-kafka.sh]
-    hostname: kafka
-    container_name: kafka
     ports:
       - "9094:9092"
     #expose: 
@@ -22,14 +19,16 @@ services:
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
       KAFKA_ADVERTISED_PORT: 9092
       KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: INSIDE:PLAINTEXT,OUTSIDE:PLAINTEXT
-      KAFKA_LISTENERS: INSIDE://kafka:9092,OUTSIDE://localhost:9094
-      KAFKA_ADVERTISED_LISTENERS: INSIDE://kafka:9092,OUTSIDE://localhost:9094
+      KAFKA_LISTENERS: INSIDE://:9092,OUTSIDE://localhost:9094
+      KAFKA_ADVERTISED_LISTENERS: INSIDE://:9092,OUTSIDE://localhost:9094
       KAFKA_INTER_BROKER_LISTENER_NAME: INSIDE
     networks:
-      - information-network
+      - "information-network"
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     depends_on:
+      - "zookeeper"
+    links:
       - "zookeeper"
 #  nifi:
 #    image: apache/nifi:latest
@@ -42,15 +41,13 @@ services:
 #      - NIFI_ZK_CONNECT_STRING=zookeeper:2181
 #      - NIFI_ELECTION_MAX_WAIT=1 min
 
-#  producer:
-#    build: 
-#      context: ./go
-#      dockerfile: Dockerfile
-#    image: kafka-producer 
-#    restart: on-failure   
-#    depends_on:
-#      kafka:
-#         condition: service_healthy
+  producer:
+    build: 
+      context: ./go
+      dockerfile: Dockerfile
+    restart: on-failure   
+    networks:
+      - "information-network"
 
 networks:
   information-network:
