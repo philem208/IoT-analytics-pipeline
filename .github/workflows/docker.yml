@@ -26,7 +26,7 @@ jobs:
       - name: start sissec-environment
         run: docker-compose up --d
       
-      - name: create sissec network:
+      - name: create sissec network
         run: docker network create sissec_information-network
         
       - name: build kafka producer
