@@ -27,10 +27,10 @@ jobs:
         run: docker-compose up --d
       
       - name: create sissec network
-        run: docker network create sissec_information-network
+        run: docker network create sissec_information_network
         
       - name: build kafka producer
-        run: docker build ./go -t kafka_producer --network="sissec_information-network" 
+        run: docker build . -t kafka_producer --network "sissec_information_network"
         
       - name: run kafka producer
-        run: docker run -i --network=sissec_information-network kafka_producer
+        run: docker run --network "sissec_information_network" kafka_producer
