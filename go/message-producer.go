@@ -41,7 +41,8 @@ func setupProducer() (sarama.AsyncProducer, error){
 // produceMessages will send 'testing 123' to KafkaTopic each second, until receive a os signal to stop e.g. control + c
 // by the user in terminal
 func produceMessages(producer sarama.AsyncProducer, signals chan os.Signal) {
-	for {
+	for i := 1;  i<=5; i++ {
+
 		time.Sleep(time.Second)
 		message := &sarama.ProducerMessage{Topic: KafkaTopic, Value: sarama.StringEncoder("testing")}
 		select {
