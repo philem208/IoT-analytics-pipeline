@@ -24,7 +24,6 @@ services:
       - "information_network"
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - /sissec/volumes/information-network/kafka:/kafka/
     depends_on:
       - "zookeeper"
     links:
@@ -44,6 +43,3 @@ services:
  
 networks:
   information_network:
-  operation_network:
-  service_network:
-

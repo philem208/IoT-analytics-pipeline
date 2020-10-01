@@ -42,7 +42,7 @@ func setupProducer() (sarama.AsyncProducer, error){
 // by the user in terminal
 func produceMessages(producer sarama.AsyncProducer, signals chan os.Signal) {
 	for {
-		time.Sleep(3 * time.Second)
+		time.Sleep(time.Second)
 		message := &sarama.ProducerMessage{Topic: KafkaTopic, Value: sarama.StringEncoder("testing")}
 		select {
 		case producer.Input() <- message:
