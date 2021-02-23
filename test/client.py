@@ -1,31 +1,28 @@
 import paho.mqtt.client as mqtt
 import time
+import random
+import json
 
 broker = "localhost"
 port = 1883
 topic =  "LENZDRGB611"
-msg =  "Test"
+msg_string = '{"temp": 20, "location": "LENZDRGB611", "type": "temperature", "units":  {"temp": "° C"}}'
+msg_json = json.loads(msg_string)
 
 client = mqtt.Client()
 client.connect(broker, port, 60)
 
 def publish(client):
-     msg_count = 0
      while True:
-         time.sleep(1)
-         msg = f"messages: {msg_count}"
-         result = client.publish(topic, msg)
+         time.sleep(random.randint(1, 10))
+         msg_json["temp"] = round(random.uniform(20, 30), 2)
+         result = client.publish(topic, json.dumps(msg_json))
          # result: [0, 1]
          status = result[0]
          if status == 0:
-             print(f"Send `{msg}` to topic `{topic}`")
+             print(f"Send `{msg_json}` to topic `{topic}`")
          else:
              print(f"Failed to send message to topic {topic}")
-         msg_count += 1
          
 publish(client)
-# Blocking call that processes network traffic, dispatches callbacks and
-# handles reconnecting.
-# Other loop*() functions are available that give a threaded interface and a
-# manual interface.
 client.loop_forever()
