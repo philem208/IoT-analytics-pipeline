@@ -7,7 +7,7 @@ The internet of things produces a massive flood of data due to the vast amount o
 
 ## Pipeline
 The pipeline shows a visualization of the Docker Compose file. The following Viz repository was used for this: [pmsipilot/docker-compose-viz](https://github.com/pmsipilot/docker-compose-viz).
-![alt text](https://github.com/philem208/IoT-analytics-pipeline/blob/master/docker-compose.png)
+![alt text](https://github.com/philem208/IoT-analytics-pipeline/blob/master/test/docker-compose.png)
 
 ## Tech stack
 | Technology      | Version | Description | Task     |
