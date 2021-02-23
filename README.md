@@ -56,3 +56,5 @@ Happy analyzing!
 ## Authors
 * **Philip Empl** - [Department of Information Systems](https://www.uni-regensburg.de/wirtschaftswissenschaften/wi-pernul/team/philip-empl/index.html)  *@ University of Regensburg*
 
+## License
+This project is available under the MIT license. 
