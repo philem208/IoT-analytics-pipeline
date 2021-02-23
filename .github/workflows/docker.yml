@@ -26,8 +26,11 @@ jobs:
       - name: setup environment
         run: docker-compose up --d
         
-      - name: build
-        run: docker build ./go -t kafka_producer --network "sissec_information_network"
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.x' # Version range or exact version of a Python version to use, using SemVer's version range syntax
+          architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
+      - run: python /test/test.py
+
         
-      - name: test
-        run: docker run --network "sissec_information_network" kafka_producer
+        
