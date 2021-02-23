@@ -19,23 +19,6 @@ services:
     networks:
       - data_hub
 
-# mqtt2kafka
-  mqtt2kafka:
-    image: marmaechler/mqtt2kafkabridge:latest
-    hostname: mqtt2kafka
-    depends_on:
-      - kafka1
-      - hivemq
-    restart: always
-    environment:
-      KAFKA_BROKER_HOST: kafka1:19091
-      MQTT_BROKER_HOST: hivemq:1883
-    volumes:
-      - ./data/mqtt2kafkabridge/logs:/opt/mqtt2kafkabridge/logs
-    networks:
-      - data_hub
-      - data_service
-
 # KAFKA 1
   kafka1:
     image: wurstmeister/kafka
@@ -195,6 +178,23 @@ services:
     depends_on:
       - elasticsearch
 
+# mqtt2kafka
+  mqtt2kafka:
+    image: marmaechler/mqtt2kafkabridge:latest
+    hostname: mqtt2kafka
+    depends_on:
+      - kafka1
+      - hivemq
+    restart: always
+    environment:
+      KAFKA_BROKER_HOST: kafka1:19091
+      MQTT_BROKER_HOST: hivemq:1883
+    volumes:
+      - ./data/mqtt2kafkabridge/logs:/opt/mqtt2kafkabridge/logs
+    networks:
+      - data_hub
+      - data_service
+      
 volumes:
   elasticsearch:
   
