@@ -2,6 +2,10 @@
 
 ![Build Status](https://github.com/philem208/IoT-analytics-pipeline/workflows/SISSeC%20CI/badge.svg)
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/philem208/IoT-analytics-pipeline.svg)](http://isitmaintained.com/project/philem208/IoT-analytics-pipeline "Percentage of issues still open")
+[![GitHub forks](https://img.shields.io/github/forks/philem208/IoT-analytics-pipeline)](https://github.com/philem208/IoT-analytics-pipeline/network)
+[![GitHub stars](https://img.shields.io/github/stars/philem208/IoT-analytics-pipeline)](https://github.com/philem208/IoT-analytics-pipeline/stargazers)
+[![GitHub license](https://img.shields.io/github/license/philem208/IoT-analytics-pipeline)](https://github.com/philem208/IoT-analytics-pipeline)
+
 ## Introduction
 The internet of things produces a massive flood of data due to the vast amount of underlying heterogeneous devices. The heterogeneity is a result of the multitude of vendors and diverse upcoming standards and protocols. From a cybersecurity perspective, this heterogeneity presents an enormous challenge. Analyses must cover all temporal dimensions to recognize incidents in real-time. These incidents are based on so-called indicators of compromise, and by identifying and reacting to them, potential damage can be minimized or completely ward off.  Thus, from the underlying data, information must be created, which can lead to knowledge and wisdom. By processing stream and batch data, descriptive, diagnostic, detective, predictive and prescriptive analytics can be engaged.   
 
