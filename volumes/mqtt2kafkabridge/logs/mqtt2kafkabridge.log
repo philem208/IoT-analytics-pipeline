@@ -2555,3 +2555,31 @@ org.eclipse.paho.client.mqttv3.MqttException: MqttException
 	at org.eclipse.paho.client.mqttv3.internal.CommsCallback.handleActionComplete(CommsCallback.java:271) [mqtt2kafkabridge.jar:?]
 	at org.eclipse.paho.client.mqttv3.internal.CommsCallback.run(CommsCallback.java:197) [mqtt2kafkabridge.jar:?]
 	at java.lang.Thread.run(Thread.java:834) [?:?]
+[ERROR] 2021-02-24 09:29:23.360 [main] Mqtt2KafkaBridge - Oops, an error occurred.
+org.eclipse.paho.client.mqttv3.MqttException: Unable to connect to server
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:80) ~[mqtt2kafkabridge.jar:?]
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG.run(ClientComms.java:722) ~[mqtt2kafkabridge.jar:?]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[?:?]
+	at java.net.Socket.connect(Socket.java:591) ~[?:?]
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:74) ~[mqtt2kafkabridge.jar:?]
+	... 2 more
+[ERROR] 2021-02-24 09:29:33.364 [main] Mqtt2KafkaBridge - Oops, an error occurred.
+org.eclipse.paho.client.mqttv3.MqttException: Unable to connect to server
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:80) ~[mqtt2kafkabridge.jar:?]
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG.run(ClientComms.java:722) ~[mqtt2kafkabridge.jar:?]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[?:?]
+	at java.net.Socket.connect(Socket.java:591) ~[?:?]
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:74) ~[mqtt2kafkabridge.jar:?]
+	... 2 more

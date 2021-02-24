@@ -31,7 +31,7 @@ services:
       KAFKA_BROKER_HOST: kafka1:19091
       MQTT_BROKER_HOST: hivemq:1883
     volumes:
-      - ./data/mqtt2kafkabridge/logs:/opt/mqtt2kafkabridge/logs
+      - ./volumes/mqtt2kafkabridge/logs:/opt/mqtt2kafkabridge/logs
     networks:
       - data_hub
       - data_service
@@ -55,7 +55,7 @@ services:
     networks:
       - data_service
     volumes:
-      - ./data/kafka1/data:/var/lib/kafka/data
+      - ./volumes/kafka1/data:/var/lib/kafka/data
     depends_on:
       - "zookeeper"
     links:
@@ -79,7 +79,7 @@ services:
     networks:
       - data_service
     volumes:
-      - ./data/kafka2/data:/var/lib/kafka/data
+      - ./volumes/kafka2/data:/var/lib/kafka/data
     depends_on:
       - "zookeeper"
     links:
@@ -103,7 +103,7 @@ services:
     networks:
       - data_service
     volumes:
-      - ./data/kafka3/data:/var/lib/kafka/data
+      - ./volumes/kafka3/data:/var/lib/kafka/data
     depends_on:
       - "zookeeper"
     links:
@@ -126,12 +126,12 @@ services:
   elasticsearch:
     hostname: elasticsearch
     build:
-      context: data/elasticsearch/
+      context: volumes/elasticsearch/
       args:
-        ELK_VERSION: 7.10.1
+        ELK_VERSION: 7.11.1
     volumes:
       - type: bind
-        source: ./data/elasticsearch/config/elasticsearch.yml
+        source: ./volumes/elasticsearch/config/elasticsearch.yml
         target: /usr/share/elasticsearch/config/elasticsearch.yml
         read_only: true
       - type: volume
@@ -141,7 +141,7 @@ services:
       - "9200"
       - "9300"
     environment:
-      ES_JAVA_OPTS: "-Xmx256m -Xms256m"
+      ES_JAVA_OPTS: "-Xmx512m -Xms512m"
       ELASTIC_PASSWORD: changeme
       # Use single node discovery in order to disable production mode and avoid bootstrap checks.
       # see: https://www.elastic.co/guide/en/elasticsearch/reference/current/bootstrap-checks.html
@@ -152,16 +152,16 @@ services:
   logstash:
     hostname: logstash
     build:
-      context: data/logstash/
+      context: volumes/logstash/
       args:
-        ELK_VERSION: 7.10.1
+        ELK_VERSION: 7.11.1
     volumes:
       - type: bind
-        source: ./data/logstash/config/logstash.yml
+        source: ./volumes/logstash/config/logstash.yml
         target: /usr/share/logstash/config/logstash.yml
         read_only: true
       - type: bind
-        source: ./data/logstash/pipeline
+        source: ./volumes/logstash/pipeline
         target: /usr/share/logstash/pipeline
         read_only: true
     expose:
@@ -170,7 +170,7 @@ services:
       - "5000/udp"
       - "9600"
     environment:
-      LS_JAVA_OPTS: "-Xmx256m -Xms256m"
+      LS_JAVA_OPTS: "-Xmx512m -Xms512m"
     networks:
       - data_service
       - analytics
@@ -180,12 +180,12 @@ services:
   kibana:
     hostname: kibana
     build:
-      context: data/kibana/
+      context: volumes/kibana/
       args:
-        ELK_VERSION: 7.10.1
+        ELK_VERSION: 7.11.1
     volumes:
       - type: bind
-        source: ./data/kibana/config/kibana.yml
+        source: ./volumes/kibana/config/kibana.yml
         target: /usr/share/kibana/config/kibana.yml
         read_only: true
     ports:
