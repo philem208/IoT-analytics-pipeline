@@ -8,28 +8,29 @@ services:
     networks:
       - data_service
       
-# HiveMQ
-  hivemq:
-    image: hivemq/hivemq-ce
-    hostname: hivemq
-    ports: 
-      - "1883:1883"
-      - "8080:8080"
-      - "8000:8000"
+  emqx:
+    image: emqx/emqx:4.2.7
+    restart: always
+    ports:
+      - 1883:1883
+      - 8083:8083
+      - 8883:8883
+      - 8084:8084
+      - 18083:18083
     networks:
-      - data_hub
-
+      - data_hub 
+          
 # mqtt2kafka
   mqtt2kafka:
     image: marmaechler/mqtt2kafkabridge:latest
     hostname: mqtt2kafka
     depends_on:
       - kafka1
-      - hivemq
+      - emqx
     restart: always
     environment:
       KAFKA_BROKER_HOST: kafka1:19091
-      MQTT_BROKER_HOST: hivemq:1883
+      MQTT_BROKER_HOST: emqx:1883
     volumes:
       - ./volumes/mqtt2kafkabridge/logs:/opt/mqtt2kafkabridge/logs
     networks:
@@ -197,7 +198,7 @@ services:
 
 volumes:
   elasticsearch:
-  
+    
 networks:
   data_service:
     driver: bridge
