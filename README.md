@@ -46,7 +46,7 @@ docker-compose up --build --force-recreate
 TODO
 #### Command
 ```python
-py /test/client.py
+py /python-mqtt-client/client.py
 ```
 
 ### Call the UIs
