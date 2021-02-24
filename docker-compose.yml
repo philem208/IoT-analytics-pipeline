@@ -128,7 +128,7 @@ services:
     build:
       context: data/elasticsearch/
       args:
-        ELK_VERSION: 7.11
+        ELK_VERSION: 7.10.1
     volumes:
       - type: bind
         source: ./data/elasticsearch/config/elasticsearch.yml
@@ -154,7 +154,7 @@ services:
     build:
       context: data/logstash/
       args:
-        ELK_VERSION: 7.11
+        ELK_VERSION: 7.10.1
     volumes:
       - type: bind
         source: ./data/logstash/config/logstash.yml
@@ -182,7 +182,7 @@ services:
     build:
       context: data/kibana/
       args:
-        ELK_VERSION: 7.11
+        ELK_VERSION: 7.10.1
     volumes:
       - type: bind
         source: ./data/kibana/config/kibana.yml
