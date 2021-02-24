@@ -3,7 +3,7 @@ services:
 # ZOOKEEPER
   zookeeper:
     image: wurstmeister/zookeeper
-    ports:
+    expose:
       - "2181"
     networks:
       - data_service

@@ -11,10 +11,10 @@ The internet of things produces a massive flood of data due to the vast amount o
 
 ## Pipeline
 The pipeline shows a visualization of the Docker Compose file. The Viz repository [pmsipilot/docker-compose-viz](https://github.com/pmsipilot/docker-compose-viz).
-![alt text](https://github.com/philem208/IoT-analytics-pipeline/blob/master/test/docker-compose.png) was used for this with the following command:
 ```docker
 docker run --rm -it --name dc -v ${pwd}:/input pmsipilot/docker-compose-viz render -m image docker-compose.yml -f
 ```
+![alt text](https://github.com/philem208/IoT-analytics-pipeline/blob/master/resources/docker-compose.png) was used for this with the following command:
 
 ## Tech stack
 | Technology      | Version | Description | Task     |
@@ -42,6 +42,9 @@ If the Logstash pipeline files or the installation commands of individual plugin
 docker-compose up --build --force-recreate
 ```
 ### Run the MQTT message producer
+#### Dependencies
+TODO
+#### Command
 ```python
 py /test/client.py
 ```
