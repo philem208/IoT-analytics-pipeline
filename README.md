@@ -1,6 +1,6 @@
 # Internet of Things Data Analytics Pipeline
 
-[![Build](https://github.com/philem208/IoT-analytics-pipeline/actions/workflows/docker.yml/badge.svg)](https://github.com/philem208/IoT-analytics-pipeline/actions/workflows/docker.yml)
+[![Branch master](https://github.com/philem208/IoT-analytics-pipeline/actions/workflows/master.yml/badge.svg)](https://github.com/philem208/IoT-analytics-pipeline/actions/workflows/master.yml)
 [![Branch experimental](https://github.com/philem208/IoT-analytics-pipeline/actions/workflows/experimental.yml/badge.svg)](https://github.com/philem208/IoT-analytics-pipeline/actions/workflows/experimental.yml)
 [![Percentage of issues still open](http://isitmaintained.com/badge/open/philem208/IoT-analytics-pipeline.svg)](http://isitmaintained.com/project/philem208/IoT-analytics-pipeline "Percentage of issues still open")
 [![GitHub forks](https://img.shields.io/github/forks/philem208/IoT-analytics-pipeline)](https://github.com/philem208/IoT-analytics-pipeline/network)
@@ -54,6 +54,7 @@ py /python-mqtt-client/client.py
 ```html
 http://localhost:5601 (Kibana)
 http://localhost:9000 (Kafdrop)
+http://localhost:18083 (EMQ X)
 ```
 
 Happy analyzing!
