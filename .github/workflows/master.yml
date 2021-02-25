@@ -22,16 +22,15 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      # Runs a single command using the runners shell
       - name: preparation
-        run: docker-compose down && docker container prune --force  && docker system prune -a
+        run: docker-compose down && docker container prune --force  && docker system prune -a --force
         
       - name: setup environment
         run: docker-compose up --d
         
         # Runs a single command using the runners shell
       - name: cleanup
-        run: docker-compose down && docker container prune --force && docker system prune -a
+        run: docker-compose down && docker container prune --force && docker system prune -a --force
     
         
     
