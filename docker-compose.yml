@@ -10,15 +10,32 @@ services:
       
   emqx:
     image: emqx/emqx:4.2.7
+    hostname: emqx
     restart: always
     ports:
-      - 1883:1883
-      - 8083:8083
-      - 8883:8883
-      - 18083:18083
+      - "1883:1883"
+      - "8083:8083"
+      - "8084:8084"
+      - "8883:8883"
+      - "18083:18083"
     networks:
       - data_hub 
-          
+
+ # kafka-mqtt:
+ #   image: confluentinc/cp-kafka-mqtt:latest
+ #   restart: always
+ #   depends_on:
+ #     - kafka1
+ #     - kafka2
+ #     - kafka3
+ #   environment:
+ #     KAFKA_MQTT_BOOTSTRAP_SERVERS: INSIDE://kafka1:19091
+ #     KAFKA_MQTT_LISTENERS: emqx:1883
+ #     KAFKA_MQTT_TOPIC_REGEX_LIST: mqtt:.*
+ #   networks:
+ #     - data_hub
+ #     - data_service
+      
 # mqtt2kafka
   mqtt2kafka:
     image: marmaechler/mqtt2kafkabridge:latest
@@ -30,6 +47,8 @@ services:
     environment:
       KAFKA_BROKER_HOST: kafka1:19091
       MQTT_BROKER_HOST: emqx:1883
+      CLIENT_ID: MQTT2Kafka
+      MQTT_TOPIC_FILTER: LENZDRGB611
     volumes:
       - ./volumes/mqtt2kafkabridge/logs:/opt/mqtt2kafkabridge/logs
     networks:
@@ -40,6 +59,7 @@ services:
   kafka1:
     image: wurstmeister/kafka
     command: [start-kafka.sh]
+    restart: always
     hostname: kafka1
     expose:
       - "9091"
@@ -64,6 +84,7 @@ services:
   kafka2:
     image: wurstmeister/kafka
     command: [start-kafka.sh]
+    restart: always
     hostname: kafka2
     expose:
       - "9092"
@@ -88,6 +109,7 @@ services:
   kafka3:
     image: wurstmeister/kafka
     command: [start-kafka.sh]
+    restart: always
     hostname: kafka3
     expose:
       - "9093"
@@ -110,10 +132,10 @@ services:
       - "zookeeper"
       
   kafdrop:
-    image: obsidiandynamics/kafdrop
-    restart: "no"
+    image: obsidiandynamics/kafdrop:latest
+    restart: always
     ports:
-      - "9002:9002" 
+      - "9000:9000" 
     environment:
       KAFKA_BROKERCONNECT: "kafka1:19091"
     networks:
@@ -127,8 +149,6 @@ services:
     hostname: elasticsearch
     build:
       context: volumes/elasticsearch/
-      args:
-        ELK_VERSION: 7.11.1
     volumes:
       - type: bind
         source: ./volumes/elasticsearch/config/elasticsearch.yml
@@ -153,8 +173,6 @@ services:
     hostname: logstash
     build:
       context: volumes/logstash/
-      args:
-        ELK_VERSION: 7.11.1
     volumes:
       - type: bind
         source: ./volumes/logstash/config/logstash.yml
@@ -176,13 +194,15 @@ services:
       - analytics
     depends_on:
       - elasticsearch
+      - kafka1
+      - kafka2
+      - kafka3
+
 
   kibana:
     hostname: kibana
     build:
       context: volumes/kibana/
-      args:
-        ELK_VERSION: 7.11.1
     volumes:
       - type: bind
         source: ./volumes/kibana/config/kibana.yml
