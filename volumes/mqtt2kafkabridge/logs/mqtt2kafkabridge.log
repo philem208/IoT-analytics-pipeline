@@ -5742,3 +5742,573 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 	at java.net.Socket.connect(Socket.java:591) ~[?:?]
 	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:74) ~[mqtt2kafkabridge.jar:?]
 	... 2 more
+[ERROR] 2021-02-26 11:28:58.432 [main] Mqtt2KafkaBridge - Oops, an error occurred.
+org.eclipse.paho.client.mqttv3.MqttException: Unable to connect to server
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:80) ~[mqtt2kafkabridge.jar:?]
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG.run(ClientComms.java:722) ~[mqtt2kafkabridge.jar:?]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[?:?]
+	at java.net.Socket.connect(Socket.java:591) ~[?:?]
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:74) ~[mqtt2kafkabridge.jar:?]
+	... 2 more
+[ERROR] 2021-02-26 11:29:11.678 [main] Mqtt2KafkaBridge - Oops, an error occurred.
+org.eclipse.paho.client.mqttv3.MqttException: Unable to connect to server
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:80) ~[mqtt2kafkabridge.jar:?]
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG.run(ClientComms.java:722) ~[mqtt2kafkabridge.jar:?]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[?:?]
+	at java.net.Socket.connect(Socket.java:591) ~[?:?]
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:74) ~[mqtt2kafkabridge.jar:?]
+	... 2 more
+[ERROR] 2021-02-26 11:29:22.713 [main] Mqtt2KafkaBridge - Oops, an error occurred.
+org.eclipse.paho.client.mqttv3.MqttException: Unable to connect to server
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:80) ~[mqtt2kafkabridge.jar:?]
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG.run(ClientComms.java:722) ~[mqtt2kafkabridge.jar:?]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[?:?]
+	at java.net.Socket.connect(Socket.java:591) ~[?:?]
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:74) ~[mqtt2kafkabridge.jar:?]
+	... 2 more
+[ERROR] 2021-02-26 11:29:33.282 [main] Mqtt2KafkaBridge - Oops, an error occurred.
+org.eclipse.paho.client.mqttv3.MqttException: Unable to connect to server
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:80) ~[mqtt2kafkabridge.jar:?]
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG.run(ClientComms.java:722) ~[mqtt2kafkabridge.jar:?]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[?:?]
+	at java.net.Socket.connect(Socket.java:591) ~[?:?]
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:74) ~[mqtt2kafkabridge.jar:?]
+	... 2 more
+[ERROR] 2021-03-01 07:40:11.210 [main] Mqtt2KafkaBridge - Oops, an error occurred.
+org.eclipse.paho.client.mqttv3.MqttException: MqttException
+	at org.eclipse.paho.client.mqttv3.internal.ExceptionHelper.createMqttException(ExceptionHelper.java:38) ~[mqtt2kafkabridge.jar:?]
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG.run(ClientComms.java:736) ~[mqtt2kafkabridge.jar:?]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+Caused by: java.net.UnknownHostException: emqx
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:220) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[?:?]
+	at java.net.Socket.connect(Socket.java:591) ~[?:?]
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:74) ~[mqtt2kafkabridge.jar:?]
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG.run(ClientComms.java:722) ~[mqtt2kafkabridge.jar:?]
+	... 1 more
+[ERROR] 2021-03-01 07:40:17.525 [main] Mqtt2KafkaBridge - Oops, an error occurred.
+org.eclipse.paho.client.mqttv3.MqttException: MqttException
+	at org.eclipse.paho.client.mqttv3.internal.ExceptionHelper.createMqttException(ExceptionHelper.java:38) ~[mqtt2kafkabridge.jar:?]
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG.run(ClientComms.java:736) ~[mqtt2kafkabridge.jar:?]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+Caused by: java.net.UnknownHostException: emqx
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:220) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[?:?]
+	at java.net.Socket.connect(Socket.java:591) ~[?:?]
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:74) ~[mqtt2kafkabridge.jar:?]
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG.run(ClientComms.java:722) ~[mqtt2kafkabridge.jar:?]
+	... 1 more
+[ERROR] 2021-03-01 07:42:07.936 [main] Mqtt2KafkaBridge - Oops, an error occurred.
+org.eclipse.paho.client.mqttv3.MqttException: Unable to connect to server
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:80) ~[mqtt2kafkabridge.jar:?]
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG.run(ClientComms.java:722) ~[mqtt2kafkabridge.jar:?]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[?:?]
+	at java.net.Socket.connect(Socket.java:591) ~[?:?]
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:74) ~[mqtt2kafkabridge.jar:?]
+	... 2 more
+[ERROR] 2021-03-01 07:42:18.646 [main] Mqtt2KafkaBridge - Oops, an error occurred.
+org.eclipse.paho.client.mqttv3.MqttException: Unable to connect to server
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:80) ~[mqtt2kafkabridge.jar:?]
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG.run(ClientComms.java:722) ~[mqtt2kafkabridge.jar:?]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[?:?]
+	at java.net.Socket.connect(Socket.java:591) ~[?:?]
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:74) ~[mqtt2kafkabridge.jar:?]
+	... 2 more
+[ERROR] 2021-03-01 07:42:28.304 [main] Mqtt2KafkaBridge - Oops, an error occurred.
+org.eclipse.paho.client.mqttv3.MqttException: Unable to connect to server
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:80) ~[mqtt2kafkabridge.jar:?]
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG.run(ClientComms.java:722) ~[mqtt2kafkabridge.jar:?]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[?:?]
+	at java.net.Socket.connect(Socket.java:591) ~[?:?]
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:74) ~[mqtt2kafkabridge.jar:?]
+	... 2 more
+[ERROR] 2021-03-01 07:42:39.011 [main] Mqtt2KafkaBridge - Oops, an error occurred.
+org.eclipse.paho.client.mqttv3.MqttException: Unable to connect to server
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:80) ~[mqtt2kafkabridge.jar:?]
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG.run(ClientComms.java:722) ~[mqtt2kafkabridge.jar:?]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[?:?]
+	at java.net.Socket.connect(Socket.java:591) ~[?:?]
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:74) ~[mqtt2kafkabridge.jar:?]
+	... 2 more
+[ERROR] 2021-03-01 07:42:48.896 [main] Mqtt2KafkaBridge - Oops, an error occurred.
+org.eclipse.paho.client.mqttv3.MqttException: Unable to connect to server
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:80) ~[mqtt2kafkabridge.jar:?]
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG.run(ClientComms.java:722) ~[mqtt2kafkabridge.jar:?]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[?:?]
+	at java.net.Socket.connect(Socket.java:591) ~[?:?]
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:74) ~[mqtt2kafkabridge.jar:?]
+	... 2 more
+[ERROR] 2021-03-01 07:42:57.834 [main] Mqtt2KafkaBridge - Oops, an error occurred.
+org.eclipse.paho.client.mqttv3.MqttException: Unable to connect to server
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:80) ~[mqtt2kafkabridge.jar:?]
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG.run(ClientComms.java:722) ~[mqtt2kafkabridge.jar:?]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[?:?]
+	at java.net.Socket.connect(Socket.java:591) ~[?:?]
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:74) ~[mqtt2kafkabridge.jar:?]
+	... 2 more
+[ERROR] 2021-03-01 07:49:19.122 [main] Mqtt2KafkaBridge - Oops, an error occurred.
+org.eclipse.paho.client.mqttv3.MqttException: Unable to connect to server
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:80) ~[mqtt2kafkabridge.jar:?]
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG.run(ClientComms.java:722) ~[mqtt2kafkabridge.jar:?]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[?:?]
+	at java.net.Socket.connect(Socket.java:591) ~[?:?]
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:74) ~[mqtt2kafkabridge.jar:?]
+	... 2 more
+[ERROR] 2021-03-01 07:49:28.574 [main] Mqtt2KafkaBridge - Oops, an error occurred.
+org.eclipse.paho.client.mqttv3.MqttException: Unable to connect to server
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:80) ~[mqtt2kafkabridge.jar:?]
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG.run(ClientComms.java:722) ~[mqtt2kafkabridge.jar:?]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[?:?]
+	at java.net.Socket.connect(Socket.java:591) ~[?:?]
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:74) ~[mqtt2kafkabridge.jar:?]
+	... 2 more
+[ERROR] 2021-03-01 07:49:39.435 [main] Mqtt2KafkaBridge - Oops, an error occurred.
+org.eclipse.paho.client.mqttv3.MqttException: Unable to connect to server
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:80) ~[mqtt2kafkabridge.jar:?]
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG.run(ClientComms.java:722) ~[mqtt2kafkabridge.jar:?]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[?:?]
+	at java.net.Socket.connect(Socket.java:591) ~[?:?]
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:74) ~[mqtt2kafkabridge.jar:?]
+	... 2 more
+[ERROR] 2021-03-01 07:49:49.161 [main] Mqtt2KafkaBridge - Oops, an error occurred.
+org.eclipse.paho.client.mqttv3.MqttException: Unable to connect to server
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:80) ~[mqtt2kafkabridge.jar:?]
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG.run(ClientComms.java:722) ~[mqtt2kafkabridge.jar:?]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[?:?]
+	at java.net.Socket.connect(Socket.java:591) ~[?:?]
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:74) ~[mqtt2kafkabridge.jar:?]
+	... 2 more
+[ERROR] 2021-03-01 07:50:03.893 [main] Mqtt2KafkaBridge - Oops, an error occurred.
+org.eclipse.paho.client.mqttv3.MqttException: Unable to connect to server
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:80) ~[mqtt2kafkabridge.jar:?]
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG.run(ClientComms.java:722) ~[mqtt2kafkabridge.jar:?]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[?:?]
+	at java.net.Socket.connect(Socket.java:591) ~[?:?]
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:74) ~[mqtt2kafkabridge.jar:?]
+	... 2 more
+[ERROR] 2021-03-01 07:50:12.644 [main] Mqtt2KafkaBridge - Oops, an error occurred.
+org.eclipse.paho.client.mqttv3.MqttException: Unable to connect to server
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:80) ~[mqtt2kafkabridge.jar:?]
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG.run(ClientComms.java:722) ~[mqtt2kafkabridge.jar:?]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[?:?]
+	at java.net.Socket.connect(Socket.java:591) ~[?:?]
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:74) ~[mqtt2kafkabridge.jar:?]
+	... 2 more
+[ERROR] 2021-03-01 08:51:46.844 [main] Mqtt2KafkaBridge - Oops, an error occurred.
+org.eclipse.paho.client.mqttv3.MqttException: Unable to connect to server
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:80) ~[mqtt2kafkabridge.jar:?]
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG.run(ClientComms.java:722) ~[mqtt2kafkabridge.jar:?]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[?:?]
+	at java.net.Socket.connect(Socket.java:591) ~[?:?]
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:74) ~[mqtt2kafkabridge.jar:?]
+	... 2 more
+[ERROR] 2021-03-01 08:51:58.336 [main] Mqtt2KafkaBridge - Oops, an error occurred.
+org.eclipse.paho.client.mqttv3.MqttException: Unable to connect to server
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:80) ~[mqtt2kafkabridge.jar:?]
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG.run(ClientComms.java:722) ~[mqtt2kafkabridge.jar:?]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[?:?]
+	at java.net.Socket.connect(Socket.java:591) ~[?:?]
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:74) ~[mqtt2kafkabridge.jar:?]
+	... 2 more
+[ERROR] 2021-03-01 08:52:10.593 [main] Mqtt2KafkaBridge - Oops, an error occurred.
+org.eclipse.paho.client.mqttv3.MqttException: Unable to connect to server
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:80) ~[mqtt2kafkabridge.jar:?]
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG.run(ClientComms.java:722) ~[mqtt2kafkabridge.jar:?]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[?:?]
+	at java.net.Socket.connect(Socket.java:591) ~[?:?]
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:74) ~[mqtt2kafkabridge.jar:?]
+	... 2 more
+[ERROR] 2021-03-01 08:52:20.671 [main] Mqtt2KafkaBridge - Oops, an error occurred.
+org.eclipse.paho.client.mqttv3.MqttException: Unable to connect to server
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:80) ~[mqtt2kafkabridge.jar:?]
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG.run(ClientComms.java:722) ~[mqtt2kafkabridge.jar:?]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[?:?]
+	at java.net.Socket.connect(Socket.java:591) ~[?:?]
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:74) ~[mqtt2kafkabridge.jar:?]
+	... 2 more
+[ERROR] 2021-03-01 09:00:01.932 [main] Mqtt2KafkaBridge - Oops, an error occurred.
+org.eclipse.paho.client.mqttv3.MqttException: Unable to connect to server
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:80) ~[mqtt2kafkabridge.jar:?]
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG.run(ClientComms.java:722) ~[mqtt2kafkabridge.jar:?]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[?:?]
+	at java.net.Socket.connect(Socket.java:591) ~[?:?]
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:74) ~[mqtt2kafkabridge.jar:?]
+	... 2 more
+[ERROR] 2021-03-01 09:00:13.318 [main] Mqtt2KafkaBridge - Oops, an error occurred.
+org.eclipse.paho.client.mqttv3.MqttException: Unable to connect to server
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:80) ~[mqtt2kafkabridge.jar:?]
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG.run(ClientComms.java:722) ~[mqtt2kafkabridge.jar:?]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[?:?]
+	at java.net.Socket.connect(Socket.java:591) ~[?:?]
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:74) ~[mqtt2kafkabridge.jar:?]
+	... 2 more
+[ERROR] 2021-03-01 09:00:23.309 [main] Mqtt2KafkaBridge - Oops, an error occurred.
+org.eclipse.paho.client.mqttv3.MqttException: Unable to connect to server
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:80) ~[mqtt2kafkabridge.jar:?]
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG.run(ClientComms.java:722) ~[mqtt2kafkabridge.jar:?]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[?:?]
+	at java.net.Socket.connect(Socket.java:591) ~[?:?]
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:74) ~[mqtt2kafkabridge.jar:?]
+	... 2 more
+[ERROR] 2021-03-01 09:07:48.820 [main] Mqtt2KafkaBridge - Oops, an error occurred.
+org.eclipse.paho.client.mqttv3.MqttException: Unable to connect to server
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:80) ~[mqtt2kafkabridge.jar:?]
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG.run(ClientComms.java:722) ~[mqtt2kafkabridge.jar:?]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[?:?]
+	at java.net.Socket.connect(Socket.java:591) ~[?:?]
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:74) ~[mqtt2kafkabridge.jar:?]
+	... 2 more
+[ERROR] 2021-03-01 09:07:53.551 [main] Mqtt2KafkaBridge - Oops, an error occurred.
+org.eclipse.paho.client.mqttv3.MqttException: Unable to connect to server
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:80) ~[mqtt2kafkabridge.jar:?]
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG.run(ClientComms.java:722) ~[mqtt2kafkabridge.jar:?]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[?:?]
+	at java.net.Socket.connect(Socket.java:591) ~[?:?]
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:74) ~[mqtt2kafkabridge.jar:?]
+	... 2 more
+[ERROR] 2021-03-01 09:08:00.777 [main] Mqtt2KafkaBridge - Oops, an error occurred.
+org.eclipse.paho.client.mqttv3.MqttException: Unable to connect to server
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:80) ~[mqtt2kafkabridge.jar:?]
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG.run(ClientComms.java:722) ~[mqtt2kafkabridge.jar:?]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[?:?]
+	at java.net.Socket.connect(Socket.java:591) ~[?:?]
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:74) ~[mqtt2kafkabridge.jar:?]
+	... 2 more
+[ERROR] 2021-03-01 09:08:09.722 [main] Mqtt2KafkaBridge - Oops, an error occurred.
+org.eclipse.paho.client.mqttv3.MqttException: Unable to connect to server
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:80) ~[mqtt2kafkabridge.jar:?]
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG.run(ClientComms.java:722) ~[mqtt2kafkabridge.jar:?]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[?:?]
+	at java.net.Socket.connect(Socket.java:591) ~[?:?]
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:74) ~[mqtt2kafkabridge.jar:?]
+	... 2 more
+[ERROR] 2021-03-01 09:08:18.645 [main] Mqtt2KafkaBridge - Oops, an error occurred.
+org.eclipse.paho.client.mqttv3.MqttException: Unable to connect to server
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:80) ~[mqtt2kafkabridge.jar:?]
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG.run(ClientComms.java:722) ~[mqtt2kafkabridge.jar:?]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[?:?]
+	at java.net.Socket.connect(Socket.java:591) ~[?:?]
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:74) ~[mqtt2kafkabridge.jar:?]
+	... 2 more
+[ERROR] 2021-03-01 09:25:51.505 [main] Mqtt2KafkaBridge - Oops, an error occurred.
+org.eclipse.paho.client.mqttv3.MqttException: Unable to connect to server
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:80) ~[mqtt2kafkabridge.jar:?]
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG.run(ClientComms.java:722) ~[mqtt2kafkabridge.jar:?]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[?:?]
+	at java.net.Socket.connect(Socket.java:591) ~[?:?]
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:74) ~[mqtt2kafkabridge.jar:?]
+	... 2 more
+[ERROR] 2021-03-01 09:26:04.116 [main] Mqtt2KafkaBridge - Oops, an error occurred.
+org.eclipse.paho.client.mqttv3.MqttException: Unable to connect to server
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:80) ~[mqtt2kafkabridge.jar:?]
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG.run(ClientComms.java:722) ~[mqtt2kafkabridge.jar:?]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[?:?]
+	at java.net.Socket.connect(Socket.java:591) ~[?:?]
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:74) ~[mqtt2kafkabridge.jar:?]
+	... 2 more
+[ERROR] 2021-03-01 09:26:14.218 [main] Mqtt2KafkaBridge - Oops, an error occurred.
+org.eclipse.paho.client.mqttv3.MqttException: Unable to connect to server
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:80) ~[mqtt2kafkabridge.jar:?]
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG.run(ClientComms.java:722) ~[mqtt2kafkabridge.jar:?]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[?:?]
+	at java.net.Socket.connect(Socket.java:591) ~[?:?]
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:74) ~[mqtt2kafkabridge.jar:?]
+	... 2 more
+[ERROR] 2021-03-01 09:26:22.006 [main] Mqtt2KafkaBridge - Oops, an error occurred.
+org.eclipse.paho.client.mqttv3.MqttException: Unable to connect to server
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:80) ~[mqtt2kafkabridge.jar:?]
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG.run(ClientComms.java:722) ~[mqtt2kafkabridge.jar:?]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[?:?]
+	at java.net.Socket.connect(Socket.java:591) ~[?:?]
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:74) ~[mqtt2kafkabridge.jar:?]
+	... 2 more
+[ERROR] 2021-03-01 09:26:30.994 [main] Mqtt2KafkaBridge - Oops, an error occurred.
+org.eclipse.paho.client.mqttv3.MqttException: Unable to connect to server
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:80) ~[mqtt2kafkabridge.jar:?]
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG.run(ClientComms.java:722) ~[mqtt2kafkabridge.jar:?]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[?:?]
+	at java.net.Socket.connect(Socket.java:591) ~[?:?]
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:74) ~[mqtt2kafkabridge.jar:?]
+	... 2 more
+[ERROR] 2021-03-01 09:37:26.580 [main] Mqtt2KafkaBridge - Oops, an error occurred.
+org.eclipse.paho.client.mqttv3.MqttException: Unable to connect to server
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:80) ~[mqtt2kafkabridge.jar:?]
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG.run(ClientComms.java:722) ~[mqtt2kafkabridge.jar:?]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[?:?]
+	at java.net.Socket.connect(Socket.java:591) ~[?:?]
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:74) ~[mqtt2kafkabridge.jar:?]
+	... 2 more
+[ERROR] 2021-03-01 09:50:14.065 [main] Mqtt2KafkaBridge - Oops, an error occurred.
+org.eclipse.paho.client.mqttv3.MqttException: Unable to connect to server
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:80) ~[mqtt2kafkabridge.jar:?]
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG.run(ClientComms.java:722) ~[mqtt2kafkabridge.jar:?]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[?:?]
+	at java.net.Socket.connect(Socket.java:591) ~[?:?]
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:74) ~[mqtt2kafkabridge.jar:?]
+	... 2 more
+[ERROR] 2021-03-01 09:50:24.180 [main] Mqtt2KafkaBridge - Oops, an error occurred.
+org.eclipse.paho.client.mqttv3.MqttException: Unable to connect to server
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:80) ~[mqtt2kafkabridge.jar:?]
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG.run(ClientComms.java:722) ~[mqtt2kafkabridge.jar:?]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[?:?]
+	at java.net.Socket.connect(Socket.java:591) ~[?:?]
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:74) ~[mqtt2kafkabridge.jar:?]
+	... 2 more
+[ERROR] 2021-03-01 09:50:34.005 [main] Mqtt2KafkaBridge - Oops, an error occurred.
+org.eclipse.paho.client.mqttv3.MqttException: Unable to connect to server
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:80) ~[mqtt2kafkabridge.jar:?]
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG.run(ClientComms.java:722) ~[mqtt2kafkabridge.jar:?]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[?:?]
+	at java.net.Socket.connect(Socket.java:591) ~[?:?]
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:74) ~[mqtt2kafkabridge.jar:?]
+	... 2 more
+[ERROR] 2021-03-01 09:50:42.232 [main] Mqtt2KafkaBridge - Oops, an error occurred.
+org.eclipse.paho.client.mqttv3.MqttException: Unable to connect to server
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:80) ~[mqtt2kafkabridge.jar:?]
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG.run(ClientComms.java:722) ~[mqtt2kafkabridge.jar:?]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[?:?]
+	at java.net.Socket.connect(Socket.java:591) ~[?:?]
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:74) ~[mqtt2kafkabridge.jar:?]
+	... 2 more
+[ERROR] 2021-03-01 09:50:52.339 [main] Mqtt2KafkaBridge - Oops, an error occurred.
+org.eclipse.paho.client.mqttv3.MqttException: Unable to connect to server
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:80) ~[mqtt2kafkabridge.jar:?]
+	at org.eclipse.paho.client.mqttv3.internal.ClientComms$ConnectBG.run(ClientComms.java:722) ~[mqtt2kafkabridge.jar:?]
+	at java.lang.Thread.run(Thread.java:834) ~[?:?]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242) ~[?:?]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224) ~[?:?]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403) ~[?:?]
+	at java.net.Socket.connect(Socket.java:591) ~[?:?]
+	at org.eclipse.paho.client.mqttv3.internal.TCPNetworkModule.start(TCPNetworkModule.java:74) ~[mqtt2kafkabridge.jar:?]
+	... 2 more
