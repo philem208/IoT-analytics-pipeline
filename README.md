@@ -13,7 +13,7 @@ The internet of things produces a massive flood of data due to the vast amount o
 ## Pipeline
 The pipeline shows a visualization of the Docker Compose file. The Viz repository [pmsipilot/docker-compose-viz](https://github.com/pmsipilot/docker-compose-viz).
 ```docker
-docker run --rm -it --name dc -v ${pwd}:/input pmsipilot/docker-compose-viz render -m image docker-compose.yml -f
+docker run --rm -it --name dc -v ${pwd}:/input pmsipilot/docker-compose-viz render -m image docker-compose.yml -f --horizontal --no-volumes
 ```
 ![alt text](https://github.com/philem208/IoT-analytics-pipeline/blob/master/resources/docker-compose.png) was used for this with the following command:
 
@@ -28,8 +28,8 @@ docker run --rm -it --name dc -v ${pwd}:/input pmsipilot/docker-compose-viz rend
 | [Kafdrop](https://github.com/obsidiandynamics/kafdrop) |        latest  |      Kafdrop is a web UI for viewing Kafka topics and browsing consumer groups. The tool displays information such as brokers, topics, partitions, consumers, and lets you view messages. | Kafrop simplifies the administration of a Kafka cluster by visualizing the Topics, Consumers, Producers and Brokers. 
 | [Kibana](https://www.elastic.co/kibana) |        7.10.1  |  Kibana is a free and open user interface that lets you visualize your Elasticsearch data and navigate the Elastic Stack. Do anything from tracking query load to understanding the way requests flow through your apps.     |Kibana is used for pure visualization of incoming data streams and batch data. Besides, users could also use machine learning algorithms to gain essential insights from the data. |
 | [Logstash](https://www.elastic.co/logstash) |        7.10.1 |   Logstash is a free and open server-side data processing pipeline that ingests data from a multitude of sources, transforms it, and then sends it to your favorite stash.    | Logstash collects the messages from the individual Kafka topics and, using various filters, can preprocess the data before it is stored in Elasticsearch. |
-| [MQTT-Kafka-Bridge](https://github.com/maechler/mqtt2kafkabridge) TO-BE-REPLACED |       latest  |  This is an extremely primitive MQTT to Kafka bridge, consisting of around 100 lines of code. It is not optimized for extensibility, performance nor stability and should not be used in a production environment. All it does is reading messages from an MQTT broker, replacing topic separators (e.g. home/outside/humidity -> home.outside.humidity) and forwarding the message to Kafka.     | This bridge is used to efficiently transfer the topics of the MQTT broker to the topics of the Kafka broker and synchronize their contents. |
-
+| [MQTT-Kafka-Bridge](https://github.com/maechler/mqtt2kafkabridge) TO BE REPLACED |       latest  |  This is an extremely primitive MQTT to Kafka bridge, consisting of around 100 lines of code. It is not optimized for extensibility, performance nor stability and should not be used in a production environment. All it does is reading messages from an MQTT broker, replacing topic separators (e.g. home/outside/humidity -> home.outside.humidity) and forwarding the message to Kafka.     | This bridge is used to efficiently transfer the topics of the MQTT broker to the topics of the Kafka broker and synchronize their contents. |
+| [Redis](https://redis.io/) TO BE INTEGRATED | latest | Redis is an open source (BSD licensed), in-memory data structure store, used as a database, cache, and message broker. Redis provides data structures such as strings, hashes, lists, sets, sorted sets with range queries, bitmaps, hyperloglogs, geospatial indexes, and streams. Redis has built-in replication, Lua scripting, LRU eviction, transactions, and different levels of on-disk persistence, and provides high availability via Redis Sentinel and automatic partitioning with Redis Cluster. | Redis is used for the authenatication of IoT devices inside the EMQ X message broker. | 
 
 ## Deploy
 
